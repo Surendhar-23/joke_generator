@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke Generator</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: linear-gradient(#f7ba2c, #ea5459);
+      }
+
+      
+      .container {
+        background-color: rgba(255, 255, 255, 0.618);
+        width: 80%;
+        height: 50%;
+        padding: 1rem 2rem;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.4rem;
+        padding-bottom: 2.5rem;
+        color: #111;  
+      }
+      .heading-title {
+        margin-bottom: 1.3rem;
+      }
+      .joke-text {
+        flex: 1;
+        line-height: 2;
+        transition: all 4s;
+      }
+      .joke-btn {
+        background-color: aquamarine;
+        display: inline-block;
+        padding: 0.8rem 1.6rem;
+        cursor: pointer;
+        font-size: 1.4rem;
+        /* transition: all 0.3s; */
+      }
+      .joke-btn:hover {
+        background-color: #ea5459;
+      }
+
+      .joke{
+        transition: all .5s;
+        background-color: #2cf77a;  
+      }
+
+    .setup,.punch{
+      transition: all 1s;
+    }
+    
+      .animate{
+        transform: translateX(-100%);
+        opacity: .1;
+      }
+      .hidden{
+        display: none;
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <div class="joke-text hidden">
+          <h1 class="heading-title">Programming</h1>
+          <p class="joke">
+            <p class="setup"></p>
+            <p class="punch"></p>
+          </p>
+        </div>
+        <p class="joke-btn">Give me a Joke</p>
+      </div>
+    </section>
+  </body>
+</html>
